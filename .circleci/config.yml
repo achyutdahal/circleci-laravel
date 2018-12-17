@@ -10,12 +10,10 @@ jobs:
       - run:
           name: Install system packages
           command: apt-get update && apt-get -y install git
-      - run:
-          name: Install PHP extensions
-          command: docker-php-ext-install pdo
-      - run:
-          name: Install Gd
-          command: sudo docker-php-ext-install gd 
+      - run: command: docker-php-ext-install pdo
+      - run: command: docker-php-ext-install zip
+      - run: command: sudo apt update && sudo apt install zlib1g-dev libsqlite3-dev
+      
       - checkout
       - run:
           name: Install Composer
