@@ -15,7 +15,7 @@ jobs:
           command: docker-php-ext-install pdo
       - run:
           name: Install Gd
-          command: docker-php-ext-install -j$(nproc) gd 
+          command: sudo docker-php-ext-install gd 
       - checkout
       - run:
           name: Install Composer
