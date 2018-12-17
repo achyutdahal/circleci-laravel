@@ -1,0 +1,64 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+body{
+    background-color: $bodybackground;
+}
+.wrapper{
+    width:80%;
+    margin:0px auto;
+}
+.green{
+    color: $green !important;
+}
+.alert-containter{
+    margin:5px 0px;
+}
+.content-wrapper{
+    background:#ffffff;
+    border-top:5px solid #b1afaf;
+    min-height: 60vh;
+}
+.margin-top-10{
+    margin-top:10px;
+}
+.content-wrapper{
+    padding:10px;
+}
+
+.form-control.has-error {
+  color: red;
+}
+.form-control.has-error{
+  border: 1px solid red;
+  box-shadow: 0 0 0 0.2rem rgba(250, 16, 0, 0.18);
+}
+
+small{
+    color:red !important;
+}
+.div {
+    small{
+        color: red !important;
+    }
+}
+
+.margin-left-15{
+    margin-left:15px;
+}
+
+.productLink{
+    text-decoration: none;
+}
